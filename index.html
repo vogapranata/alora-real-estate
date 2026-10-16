@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#f8f7f2" />
+  <meta name="description" content="ALORA Estate — a thoughtful collection of exceptional homes across Indonesia. Discover the place you'll love coming home to." />
+  <meta property="og:title" content="ALORA Estate — Find a place that feels like yours" />
+  <meta property="og:description" content="Thoughtfully selected homes. Beautifully simple property discovery." />
+  <meta property="og:type" content="website" />
+  <title>ALORA Estate — Find Your Place</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;450;500;550;600;650;700&family=Manrope:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400;1,500&display=swap" rel="stylesheet" />
+  <link rel="icon" type="image/svg+xml" href="./assets/favicon.svg" />
+  <link rel="stylesheet" href="./styles.css" />
+  <script src="./app.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <div class="site-shell">
+    <div class="announcement">
+      <div class="container announcement-inner">
+        <span>Exceptional spaces. Everyday living.</span>
+        <a href="#homes">Discover our collection <span aria-hidden="true">↗</span></a>
+      </div>
+    </div>
+    <header class="site-header" id="top">
+      <nav class="container nav" aria-label="Main navigation">
+        <a href="#top" class="brand" aria-label="ALORA Estate home">
+          <span class="brand-mark" aria-hidden="true"><svg viewBox="0 0 45 45" fill="none"><path d="M6 38V20.5C6 11.4 13.4 4 22.5 4S39 11.4 39 20.5V38" stroke="currentColor" stroke-width="2.6"/><path d="M13 38V21a9.5 9.5 0 0 1 19 0v17" stroke="currentColor" stroke-width="2.6"/><path d="M6 38h33" stroke="currentColor" stroke-width="2.6"/></svg></span>
+          <span class="brand-type"><strong>alora<span class="brand-dot">.</span></strong><small>ESTATE STUDIO</small></span>
+        </a>
+        <div class="desktop-links"><a href="#homes">Explore homes</a><a href="#locations">Locations</a><a href="#story">Our approach</a></div>
+        <div class="nav-actions">
+          <button class="icon-btn favorites-trigger" id="favoritesNav" aria-label="Show saved properties" title="Saved properties"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.7l-1.1-1.1a5.5 5.5 0 0 0-7.8 7.8L12 21l8.8-8.6a5.5 5.5 0 0 0 0-7.8Z"/></svg><span id="favoritesCount" class="favorites-count" hidden>0</span></button>
+          <a class="nav-contact" href="#contact">Let's talk <span aria-hidden="true">↗</span></a>
+          <button class="menu-toggle" id="menuToggle" aria-controls="mobileMenu" aria-expanded="false" aria-label="Open menu"><span></span><span></span></button>
+        </div>
+      </nav>
+      <div class="mobile-menu" id="mobileMenu" hidden><a href="#homes">Explore homes</a><a href="#locations">Locations</a><a href="#story">Our approach</a><a href="#contact">Contact us</a></div>
+    </header>
+    <main id="main">
+      <section class="hero container" aria-labelledby="heroTitle">
+        <div class="hero-copy">
+          <div class="eyebrow"><span class="eyebrow-line"></span> A MORE PERSONAL WAY TO FIND HOME</div>
+          <h1 id="heroTitle">Find a place<br />that <em>feels</em><br />like yours<span class="period">.</span></h1>
+          <p>Well-chosen spaces for your next chapter. Explore a collection of homes that make room for the life you love.</p>
+          <div class="hero-actions"><a href="#homes" class="button button-dark">Explore properties <span aria-hidden="true">↗</span></a><a href="#story" class="text-link">Get to know us <span aria-hidden="true">↗</span></a></div>
+          <div class="hero-proof"><div class="avatar-stack" aria-hidden="true"><span>J</span><span>A</span><span>M</span></div><span>More than a property.<br /><strong>A place to belong.</strong></span></div>
+        </div>
+        <div class="hero-visual">
+          <img src="https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?auto=format&fit=crop&w=1500&q=85" alt="Modern architectural home with landscaped garden" fetchpriority="high" />
+          <div class="hero-image-tag"><span class="small-dot"></span> THE ART OF LIVING WELL</div>
+          <div class="hero-floating-card"><span class="float-icon" aria-hidden="true">✳</span><div><small>DESIGNED FOR LIVING</small><strong>Every detail matters.</strong></div></div>
+          <span class="hero-image-index">01 — 06</span>
+        </div>
+      </section>
+
+      <section class="search-section container" aria-label="Property search">
+        <form id="searchForm" class="search-panel">
+          <div class="search-field"><label for="locationFilter">LOCATION</label><select id="locationFilter" name="location"><option value="all">All destinations</option><option value="Jakarta">Jakarta</option><option value="Bali">Bali</option><option value="Bandung">Bandung</option><option value="Yogyakarta">Yogyakarta</option></select></div>
+          <div class="search-field"><label for="typeFilter">PROPERTY TYPE</label><select id="typeFilter" name="type"><option value="all">All property types</option><option value="Villa">Villa</option><option value="House">House</option><option value="Apartment">Apartment</option></select></div>
+          <div class="search-field search-field-budget"><label for="budgetFilter">MAXIMUM PRICE</label><select id="budgetFilter" name="budget"><option value="all">Any budget</option><option value="3000000000">Under Rp 3B</option><option value="5000000000">Under Rp 5B</option><option value="8000000000">Under Rp 8B</option><option value="12000000000">Under Rp 12B</option></select></div>
+          <button class="button button-search" type="submit"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" width="18" height="18"><circle cx="11" cy="11" r="7"/><path d="m16.2 16.2 5 5"/></svg> Search homes</button>
+        </form>
+      </section>
+
+      <section id="homes" class="homes-section section-spacing container" aria-labelledby="homesTitle">
+        <div class="section-header"><div><div class="eyebrow section-eyebrow"><span class="eyebrow-line"></span> THE CURATED COLLECTION</div><h2 id="homesTitle">Homes with <em>a little more.</em></h2><p>Exceptional addresses. Considered details. Space for all the moments that matter.</p></div><a href="#homes" id="viewAll" class="text-link collection-link">View all homes <span aria-hidden="true">↗</span></a></div>
+        <div class="listing-toolbar"><div class="listing-count" id="listingCount" aria-live="polite">Discover our collection</div><div class="sort-wrap"><label for="sortFilter">Sort by</label><select id="sortFilter"><option value="featured">Featured</option><option value="price-asc">Price: low to high</option><option value="price-desc">Price: high to low</option><option value="beds">Most bedrooms</option></select></div></div>
+        <div class="property-grid" id="propertyGrid" aria-live="polite"></div>
+        <div id="emptyState" class="empty-state" hidden><span class="empty-icon">⌕</span><h3>Nothing quite like that. Yet.</h3><p>Try broadening your search — your next favorite place might be one click away.</p><button id="resetFilters" class="button button-dark">Clear filters <span aria-hidden="true">↗</span></button></div>
+        <div class="below-grid"><span>SEE SOMETHING YOU LOVE?</span><a href="#contact" class="text-link">Let us help you find it <span aria-hidden="true">↗</span></a></div>
+      </section>
+
+      <section class="manifesto" aria-labelledby="manifestoTitle"><div class="container manifesto-inner"><div class="manifesto-mark" aria-hidden="true">✳</div><p id="manifestoTitle">A home is more than four walls.<br /><em>It's the beginning of everything.</em></p><div class="manifesto-caption">THE ALORA PHILOSOPHY <span aria-hidden="true">↗</span></div></div></section>
+
+      <section id="locations" class="locations-section section-spacing container" aria-labelledby="locationsTitle"><div class="section-header locations-header"><div><div class="eyebrow section-eyebrow"><span class="eyebrow-line"></span> EXPLORE BY DESTINATION</div><h2 id="locationsTitle">A place for <em>every pace.</em></h2><p>Find your rhythm in neighborhoods as unique as you are.</p></div><span class="locations-aside">CURATED CORNERS OF INDONESIA <span aria-hidden="true">✳</span></span></div><div class="locations-grid">
+        <button class="location-card location-jakarta" data-city="Jakarta" aria-label="View properties in Jakarta"><img src="https://images.unsplash.com/photo-1480796927426-f609979314bd?auto=format&fit=crop&w=1000&q=80" alt="Bright metropolitan skyline and cityscape" loading="lazy" /><span class="location-shade"></span><span class="location-meta">01 / CITY LIVING</span><span class="location-bottom"><span><strong>Jakarta</strong><small>The city's best, close to everything.</small></span><span class="location-arrow">↗</span></span></button>
+        <button class="location-card location-bali" data-city="Bali" aria-label="View properties in Bali"><img src="https://images.unsplash.com/photo-1537996194471-e657df975ab4?auto=format&fit=crop&w=1100&q=80" alt="Lush tropical Bali scenery" loading="lazy" /><span class="location-shade"></span><span class="location-meta">02 / ISLAND LIVING</span><span class="location-bottom"><span><strong>Bali</strong><small>Slow mornings, extraordinary views.</small></span><span class="location-arrow">↗</span></span></button>
+        <button class="location-card location-bandung" data-city="Bandung" aria-label="View properties in Bandung"><img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=900&q=80" alt="Warm and contemporary interior living space" loading="lazy" /><span class="location-shade"></span><span class="location-meta">03 / CREATIVE LIVING</span><span class="location-bottom"><span><strong>Bandung</strong><small>Fresh air, fresh perspectives.</small></span><span class="location-arrow">↗</span></span></button>
+      </div></section>
+
+      <section id="story" class="story-section" aria-labelledby="storyTitle"><div class="story-image"><img src="https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&w=1250&q=85" alt="Thoughtfully designed sunlit interior" loading="lazy" /><span class="story-image-label">MADE FOR THE WAY YOU LIVE</span></div><div class="story-copy"><div class="eyebrow section-eyebrow"><span class="eyebrow-line"></span> DIFFERENT BY DESIGN</div><h2 id="storyTitle">Real estate,<br /><em>more human.</em></h2><p>We believe finding a home should feel exciting, not overwhelming. That's why we bring an editorial eye, honest guidance, and a more thoughtful approach to the search.</p><div class="story-values"><div><span class="value-icon">01</span><div><strong>Quality, never quantity.</strong><small>A considered collection. No endless scrolling.</small></div></div><div><span class="value-icon">02</span><div><strong>Here for your next chapter.</strong><small>Guidance that puts you and your priorities first.</small></div></div><div><span class="value-icon">03</span><div><strong>Every detail considered.</strong><small>From first look to the feeling of being home.</small></div></div></div><a href="#contact" class="button button-outline">Meet your property partner <span aria-hidden="true">↗</span></a></div></section>
+
+      <section id="contact" class="contact-section container" aria-labelledby="contactTitle"><div class="contact-panel"><div class="contact-decor" aria-hidden="true"><div class="decor-arch"></div><div class="decor-arch decor-arch-two"></div></div><div class="contact-content"><div class="eyebrow contact-eyebrow"><span class="eyebrow-line"></span> THE NEXT CHAPTER STARTS HERE</div><h2 id="contactTitle">Let's find a place<br />to <em>call yours.</em></h2><p>Something special in mind? Tell us what you're looking for. We'd love to hear your story.</p><button class="button button-light" id="contactButton">Start a conversation <span aria-hidden="true">↗</span></button></div><div class="contact-note">A more beautiful way home. <span>✳</span></div></div></section>
+    </main>
+    <footer class="footer"><div class="container"><div class="footer-top"><div class="footer-brand"><a href="#top" class="brand"><span class="brand-mark" aria-hidden="true"><svg viewBox="0 0 45 45" fill="none"><path d="M6 38V20.5C6 11.4 13.4 4 22.5 4S39 11.4 39 20.5V38" stroke="currentColor" stroke-width="2.6"/><path d="M13 38V21a9.5 9.5 0 0 1 19 0v17" stroke="currentColor" stroke-width="2.6"/><path d="M6 38h33" stroke="currentColor" stroke-width="2.6"/></svg></span><span class="brand-type"><strong>alora<span class="brand-dot">.</span></strong><small>ESTATE STUDIO</small></span></a><p>Spaces for living.<br />Stories for a lifetime.</p></div><div class="footer-links"><div><span>EXPLORE</span><a href="#homes">Our collection</a><a href="#locations">Locations</a><a href="#story">Our approach</a></div><div><span>CONNECT</span><a href="#contact">Get in touch</a><button class="footer-text-button" id="footerInquiry">Make an inquiry</button><a href="#top">Back to top ↑</a></div></div></div><div class="footer-bottom"><span>© <span id="year"></span> ALORA Estate. Made for the moments that matter.</span><span>Concept website / Demo portfolio project <span class="footer-flower">✳</span></span></div></div></footer>
+  </div>
+  <dialog id="propertyModal" class="property-modal" aria-label="Property details"><div class="modal-topbar"><span class="modal-brand">alora<span>.</span></span><button class="modal-close icon-btn" id="closeProperty" aria-label="Close property details">×</button></div><div class="modal-scroll"><div class="modal-layout"><div class="modal-images"><div class="modal-image-main"><img id="modalMainImage" alt="" /><button id="previousImage" class="gallery-arrow gallery-prev" aria-label="Previous image">←</button><button id="nextImage" class="gallery-arrow gallery-next" aria-label="Next image">→</button><div id="galleryCounter" class="gallery-counter">1 / 3</div></div><div id="modalThumbnails" class="modal-thumbnails"></div></div><div class="modal-details"><span class="modal-kicker" id="modalKicker">FEATURED PROPERTY</span><h2 id="modalTitle"></h2><div class="modal-address" id="modalAddress"></div><div class="modal-price" id="modalPrice"></div><div class="modal-specs" id="modalSpecs"></div><hr /><h3>About this home</h3><p id="modalDescription"></p><h3>What makes it special</h3><div id="modalFeatures" class="modal-features"></div><div class="modal-actions"><button class="button button-dark" id="inquireProperty">Request a viewing <span aria-hidden="true">↗</span></button><button class="button button-outline" id="shareProperty">Share listing ↗</button></div><div class="modal-disclaimer">Concept listings for demonstration purposes only.</div></div></div></div></dialog>
+  <dialog id="inquiryModal" class="inquiry-modal" aria-labelledby="inquiryTitle"><div class="inquiry-head"><span class="modal-brand">alora<span>.</span></span><button id="closeInquiry" class="modal-close icon-btn" aria-label="Close inquiry form">×</button></div><div class="inquiry-body"><div class="eyebrow section-eyebrow"><span class="eyebrow-line"></span> LET'S CONNECT</div><h2 id="inquiryTitle">Tell us <em>your story.</em></h2><p>Give us a few details and we'll help you imagine what comes next.</p><form id="inquiryForm"><div class="field"><label for="inquiryName">Your name *</label><input id="inquiryName" name="name" type="text" autocomplete="name" placeholder="Full name" maxlength="100" required /></div><div class="field"><label for="inquiryEmail">Email address *</label><input id="inquiryEmail" name="email" type="email" autocomplete="email" placeholder="you@example.com" maxlength="120" required /></div><div class="field"><label for="inquiryProperty">Interested in</label><input id="inquiryProperty" name="property" type="text" placeholder="A home or location you love" maxlength="140" /></div><div class="field"><label for="inquiryMessage">Anything else?</label><textarea id="inquiryMessage" name="message" rows="3" placeholder="Tell us what you're looking for…" maxlength="1000"></textarea></div><p class="demo-note">Demo form — submissions are previewed locally and are not sent to a real agency.</p><button type="submit" class="button button-dark inquiry-submit">Preview inquiry <span aria-hidden="true">↗</span></button></form><div class="inquiry-success" id="inquirySuccess" hidden><div class="success-symbol">✓</div><h3>Inquiry preview created.</h3><p id="inquirySummary"></p><p>This is a portfolio demo. No message was sent. Connect your own email, WhatsApp, or backend when publishing for a real agency.</p><button class="button button-dark" id="inquiryDone">Sounds good <span aria-hidden="true">↗</span></button></div></div></dialog>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+</body>
+</html>
